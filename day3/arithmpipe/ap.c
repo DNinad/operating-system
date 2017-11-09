@@ -5,8 +5,8 @@
 
 int fd[2],a,b,sum=0,fd1[2];
 pid_t id;
-char s[100];
-char buffer[120];
+char s[100],buffer[120];
+
 int main()
 {
 
@@ -15,8 +15,7 @@ int main()
 	id=fork();
 	
 	if(0==id)
-	{
-			
+	{		
 		close(fd[1]);
 		close(fd1[0]);
 	
