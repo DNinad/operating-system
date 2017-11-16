@@ -20,8 +20,8 @@ int main(int argc,char const *argv[])
 	{
 		printf("enter values of a and b:-\n");
 		scanf("%d%d",a,a+1);
-		//a[0]=atol(argv[1]);
-		//a[1]=atol(argv[2]);
+		//a[0]=atoi(argv[1]);
+		//a[1]=atoi(argv[2]);
 		write(fd1[1],a,sizeof(a));
 		read(fd2[0],&res,sizeof(res));
 		printf("result=%d\n",res);

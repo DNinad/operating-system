@@ -20,9 +20,10 @@ int main()
 	a++;
 	printf("print parent1 %d\n",a);
 	a++;
+	sleep (4);
 	
-	
-	//printf("after fork  %d %d\n",getpid(),getppid());
+	printf("after fork  %d %d\n",getpid(),getppid());
+	sleep (4);
 	printf("after fork  %d %d\n",getpid(),getppid());
 	//printf("print parent2 %d\n",a);
 	sleep (2);
